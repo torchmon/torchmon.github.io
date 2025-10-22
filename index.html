@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記念日メーカー - 何気ない毎日を、忘れられない記念日に。</title>
+    <style>
+        /* 基本的なリセットとフォント */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* ヘッダー */
+        header {
+            background: linear-gradient(to right, #ec4899, #9333ea); /* from-pink-500 to-purple-600 */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        /* セクション */
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        section h2 {
+            font-size: 2em;
+            color: #ec4899; /* pink-500 */
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #9333ea; /* purple-600 */
+            margin: 15px auto 0;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-item h3 {
+            color: #9333ea; /* purple-600 */
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        .feature-item p {
+            color: #555;
+        }
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #9333ea, #ec4899); /* purple-600 to pink-500 */
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #9333ea; /* purple-600 */
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+            color: #7c2dbe; /* darker purple */
+        }
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+        /* アイコンのスタイル */
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            color: #ec4899; /* pink-500 */
+        }
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            section {
+                padding: 30px 15px;
+            }
+            section h2 {
+                font-size: 1.6em;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-section {
+                padding: 40px 15px;
+            }
+            .cta-button {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>記念日メーカー</h1>
+            <p>何気ない毎日を、忘れられない記念日に。</p>
+        </div>
+    </header>
 
+    <main class="container">
+        <section>
+            <h2>アプリについて</h2>
+            <p style="text-align: center; font-size: 1.1em; max-width: 700px; margin: 0 auto 30px;">
+                「記念日メーカー」は、大切な記念日を記録し、カウントダウンするアプリです。
+                付き合った日や結婚記念日などの特別な日はもちろん、<br>
+                「初めて一緒に映画を観た日」や「新しい趣味を始めた日」など、<br>
+                あなただけのささやかな記念日も気軽に登録して、毎日をちょっと楽しくしませんか？
+            </p>
+        </section>
+
+        <section>
+            <h2>主な機能</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <!-- Plus icon -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    <h3>思い立ったらすぐ登録</h3>
+                    <p>記念日の名前と日付を選ぶだけ。複雑な入力は不要で、思いついたその日に、あなただけの記念日をすぐに作成できます。</p>
+                </div>
+                <div class="feature-item">
+                    <!-- Calendar icon -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <h3>近づく記念日をカウントダウン</h3>
+                    <p>次の記念日まであと何日か、何回目の記念日かを自動で計算。カードを眺めるだけで、ワクワクした気持ちが膨らみます。</p>
+                </div>
+                <div class="feature-item">
+                    <!-- Party Popper icon -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12v0c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11v0c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98v0C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg>
+                    <h3>当日は特別なお祝いを</h3>
+                    <p>記念日当日は、アプリが特別仕様に。ささやかなサプライズで、大切な一日を彩り、忘れられない思い出を演出します。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>あなただけの記念日を、今すぐ始めよう！</h2>
+            <a href="https://apps.apple.com/app/id6753888718" class="cta-button">アプリを起動する</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 記念日メーカー. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
