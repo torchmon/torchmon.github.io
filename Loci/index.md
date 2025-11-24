@@ -47,6 +47,6 @@ Lociは、あなたが見つけたお気に入りの場所や、心に残った�
 
 Lociはユーザーのプライバシーを尊重します。詳細については、以下のリンクからプライバシーポリシーをご確認ください。
 
-[プライバシーポリシーを読む](https://torchmon.github.io/privacy/ten-count.html)
+[プライバシーポリシーを読む](https://torchmon.github.io/privacy/Loci.html)
 
 ---
