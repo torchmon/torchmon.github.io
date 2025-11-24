@@ -34,19 +34,19 @@ Lociは、あなたが見つけたお気に入りの場所や、心に残った�
 
 | 記録する | 再発見する | 整理する |
 |:---:|:---:|:---:|
-| <img src="[ss1.png]" alt="Screenshot 1: Record your spots" width="250"/> | <img src="[ss2.png]" alt="Screenshot 2: Rediscover your favorites" width="250"/> | <img src="[ss3.png]" alt="Screenshot 3: Organize with photos and tags" width="250"/> |
+| <img src="ss1.png" alt="Screenshot 1: Record your spots" width="250"/> | <img src="ss2.png" alt="Screenshot 2: Rediscover your favorites" width="250"/> | <img src="ss3.png" alt="Screenshot 3: Organize with photos and tags" width="250"/> |
 | **あなただけの場所を記録** | **忘れていたお気に入りと再会** | **写真やタグで思い出を豊かに** |
 
 ## サポート
 
 ご意見・ご要望や不具合の報告は、以下の連絡先までお気軽にご連絡ください。
 
-**Email:** `[torchmon@icloud.com]`
+**Email:** `torchmon@icloud.com`
 
 ## プライバシーポリシー
 
 Lociはユーザーのプライバシーを尊重します。詳細については、以下のリンクからプライバシーポリシーをご確認ください。
 
-[プライバシーポリシーを読む]([https://torchmon.github.io/privacy/ten-count.html])
+[プライバシーポリシーを読む](https://torchmon.github.io/privacy/ten-count.html)
 
 ---
