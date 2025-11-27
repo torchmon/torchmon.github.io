@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="[ここにApp Storeへのリンクを挿入]"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="60"/></a>
+  <a href="https://apps.apple.com/jp/app/loci/id6755675088"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="60"/></a>
 </p>
 
 ---
