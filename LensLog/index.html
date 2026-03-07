@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensLog - コンタクトレンズ管理＆度数メモ</title>
+    <style>
+        :root {
+            --primary-color: #f7a58c; /* Peach from App Icon */
+            --secondary-color: #fbd6b1; /* Warm beige from App Icon */
+            --text-dark: #333333;
+            --text-light: #777777;
+            --bg-light: #fafafa;
+            --white: #ffffff;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header / Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--bg-light);
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .app-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 34px;
+            box-shadow: 0 16px 32px rgba(0,0,0,0.15);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 10px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--text-dark);
+            color: var(--white);
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+        }
+
+        /* Features Section */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .feature-desc {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* Testimonial / Target Audience */
+        .highlight-section {
+            background-color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .highlight-text {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .subtitle { font-size: 1.2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Ensure AppIcon.png is in the same directory, or accessible path -->
+            <img src="LensLog/AppIcon.png" alt="LensLog Icon" class="app-icon">
+            <h1>LensLog</h1>
+            <p class="subtitle">コンタクトレンズの「いつから？」をなくすスマートな管理アプリ</p>
+            <a href="#" class="download-btn">App Store で手に入れる</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <main class="container">
+        <h2 class="section-title">LensLogでできること</h2>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3 class="feature-title">交換時期を一目で把握</h3>
+                <p class="feature-desc">ホーム画面の円形ゲージで、現在のレンズを使ってから何日経過しているか直感的に確認できます。通知設定をすれば交換忘れも防げます。</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3 class="feature-title">左右の度数を正確に記録</h3>
+                <p class="feature-desc">左（L）と右（R）で異なる度数（PWR）、ベースカーブ（BC）、直径（DIA）を別々にパラメーターとして保存しておけます。</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">📸</div>
+                <h3 class="feature-title">パッケージ画像の保存</h3>
+                <p class="feature-desc">眼科の処方箋や、購入したコンタクトレンズのパッケージ写真をアプリ内に保存。次回購入時に「どれだっけ？」と迷うことがなくなります。</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="feature-icon">☁️</div>
+                <h3 class="feature-title">iCloudでシームレスな同期</h3>
+                <p class="feature-desc">登録したデータは、AppleのセキュアなiCloud経由であなたのiPadなど複数端末へ自動で同期・バックアップされます。</p>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3 class="feature-title">交換も履歴管理も簡単</h3>
+                <p class="feature-desc">ワンタップで新しいレンズの使用を開始。「いつからいつまで使っていたか」の履歴も自動で記録され、いつでも過去のデータや画像を振り返れます。</p>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">プライバシーファースト</h3>
+                <p class="feature-desc">あなたの目は大切な個人情報です。データは端末内とiCloudのプライベート領域のみに保存され、開発者が見ることは一切ありません。</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Highlight Section -->
+    <section class="highlight-section">
+        <p class="highlight-text">
+            「2週間や1ヶ月のレンズを使っているけれど、毎回交換日を忘れてしまう」<br>
+            「視力や度数をメモ帳に散らかしてしまい、いざという時に見つからない」<br><br>
+            <strong>LensLogは、そんな小さなストレスを解消するために生まれた、<br>最高にシンプルで美しいiOS専用アプリです。</strong>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a href="https://torchmon.github.io/privacy/LensLog">プライバシーポリシー</a>
+            <!-- <a href="TermsOfUse.md">利用規約</a> -->
+            <a href="mailto:torchmon@icloud.com">サポート</a>
+        </div>
+        <div class="copyright">
+            &copy; 2026 LensLog. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
